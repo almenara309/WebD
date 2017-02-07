@@ -1,0 +1,38 @@
+link(href='css/bootstrap.min.css', rel='stylesheet')
+
+	div(class="col-md-5 center-block no-float top-space text-left")
+		h1 Agregar Producto
+		form(method="post" action="/creardatos" style="margin-top:1.5em;" enctype="multipart/form-data")
+			div(class="form-group")
+				label Nombre
+				input(type="text" name="tipo" placeholder="Nombre de la habitacion" class="form-control")
+			div(class="form-group")
+				label Temperatura
+				input(type="number" name="temperatura" placeholder="Temperatura" class="form-control")
+			div(class="form-group")
+				label Estado
+				input(type="number" name="estado" placeholder="Estado" class="form-control")
+			div(class="form-group")
+				label Enchufes
+				input(type="boolean" name="enchufes"class="form-control")
+			div(class="form-group")
+				label Modo
+				input(type="text" name="modo" placeholder="Contraseña" class="form-control")
+			div(class="form-group")
+				label Sensor 1
+				input(type="boolean" name="sensor1"class="form-control")
+			div(class="form-group")
+				label Sensor 2
+				input(type="boolean" name="sensor2"class="form-control")
+			div(class="form-group")
+				label Luz 1
+				input(type="number" name="luz1"class="form-control")
+			div(class="form-group")
+				label Luz 2 
+				input(type="number" name="luz2"class="form-control")
+			div(class="form-group")
+				label Luz 3
+				input(type="number" name="luz3"class="form-control")
+			div(class="form-group")
+				div(class="form-group text-right")
+				input(type="submit" class="btn btn-info" value="Guardar")
